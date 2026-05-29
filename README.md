@@ -20,10 +20,12 @@ A powerful WhatsApp multi-device bot with YouTube downloader, server status, sti
 ## 🚀 Deploy on Railway
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template?template=https://github.com/yourusername/silayox-v6-bot)
+## 🚀 Deploy on any panel 
+including katabump herouku and other
 
 Or manually:
 1. Fork this repo on GitHub
-2. Create a new project on Railway
+2. Create a new project on Railway/any panel
 3. Connect your GitHub repo
 4. Add environment variables (`.env` content)
 5. Deploy
@@ -31,7 +33,7 @@ Or manually:
 ## 📱 Local Run
 
 ```bash
-git clone https://github.com/yourusername/silayox-v6-bot
+git clone https://github.com/silayoX340-hub/silayox-v6-bot
 cd silayox-v6-bot
 npm install
 npm start
