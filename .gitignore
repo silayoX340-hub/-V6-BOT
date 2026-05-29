@@ -1,0 +1,9 @@
+node_modules/
+session/
+*.log
+.env
+.DS_Store
+*.tmp
+*.temp
+auth_info.json
+creds.json
