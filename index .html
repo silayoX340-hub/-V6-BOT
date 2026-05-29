@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>SILAYOX V6 | Session ID Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo">🟢 SILAYOX <span>V6</span></div>
+                <p class="tagline">WhatsApp Bot Session Generator</p>
+            </div>
+
+            <!-- Method Selector -->
+            <div class="method-tabs">
+                <button class="method-btn active" data-method="qr">
+                    <span>📱</span> QR CODE
+                </button>
+                <button class="method-btn" data-method="pairing">
+                    <span>🔢</span> PAIRING CODE
+                </button>
+            </div>
+
+            <!-- QR Method Area -->
+            <div id="qr-area" class="method-area active">
+                <div class="qr-box">
+                    <div id="qr-placeholder" class="qr-placeholder">
+                        <div class="spinner"></div>
+                        <span>📷</span>
+                        <p>Click "Connect" to generate QR</p>
+                    </div>
+                    <canvas id="qr-canvas" style="display: none;"></canvas>
+                </div>
+                <p class="hint">1. Click Connect → 2. Scan QR with WhatsApp → 3. Copy Session ID</p>
+            </div>
+
+            <!-- Pairing Method Area -->
+            <div id="pairing-area" class="method-area">
+                <div class="input-wrapper">
+                    <input type="tel" id="phone-number" placeholder="Enter phone number (e.g., 628123456789)" />
+                    <small>Include country code, no spaces or + sign</small>
+                </div>
+                <p class="hint">You will receive an 8-digit code to enter in WhatsApp</p>
+            </div>
+
+            <!-- Session ID Display - IMPORTANT SECTION -->
+            <div class="session-card">
+                <div class="session-header">
+                    <span>🔑</span> YOUR SESSION ID
+                    <span>📋</span>
+                </div>
+                <div class="session-value">
+                    <code id="session-display">——————</code>
+                    <button id="copy-session-btn" class="copy-btn" disabled>COPY</button>
+                </div>
+                <p class="session-warning">⚠️ Save this ID! You need it to run SILAYOX V6 Bot.</p>
+            </div>
+
+            <!-- Action Button -->
+            <button id="connect-btn" class="connect-btn">
+                🚀 CONNECT WHATSAPP
+            </button>
+
+            <!-- Status -->
+            <div id="status-bar" class="status-bar">
+                <span>⚡</span> Ready to generate session
+            </div>
+
+            <!-- YouTube Link Section -->
+            <div class="youtube-link">
+                <a href="https://youtube.com/@silayox" target="_blank" rel="noopener noreferrer">
+                    <span>▶️</span> Watch Tutorial: How to Use SILAYOX V6
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                SILAYOX V6 BOT • Session ID Generator • v6.0
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
