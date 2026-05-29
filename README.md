@@ -19,7 +19,7 @@ A powerful WhatsApp multi-device bot with YouTube downloader, server status, sti
 
 ## 🚀 Deploy on Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template?template=https://github.com/yourusername/silayox-v6-bot)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template?template=https://github.com/braysonsilayo340-hub/silayox-v6-bot)
 ## 🚀 Deploy on any panel 
 including katabump herouku and other
 
